@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>LOGIN</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+
+<body>
+    <form class="form">
+        <h1>Login</h1>
+        <div class="contenedor">
+
+
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+
+                <input type="text" [(ngModel)]="email" placeholder="Correo Electronico" id="correo" name="email" />
+            </div>
+
+            <div class="input-contenedor">
+                <i class="fas fa-lock icon"></i>
+                <input type="password" [(ngModel)]="pass" placeholder="Contraseña" name="pass">
+            </div>
+
+
+            <button (click)="lee()" class="button">Login</button>
+
+
+
+            <p>Al Registrate, aceptas nuestras Condiciones de uso y Política de la empresa.</p>
+            <p>¿No tienes una cuenta? <a class="link" href="registro.html">Registrate</a></p>
+        </div>
+
+
+    </form>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
